@@ -1,0 +1,7 @@
+Pages
+    About
+    Blog
+    Contact
+Footer - Contact
+Logo/favicon
+Remove the annoying sidebar thing
