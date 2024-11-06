@@ -75,6 +75,18 @@ strong {
   position:relative;
 }
 
+.navigation {
+  position:absolute;
+  top:13px;
+  right:80px;
+  width:650px;
+}
+
+.test2 {
+  font-size:18px;
+  font-weight: bold;
+}
+
 section img {
   max-width: 100%;
 }
@@ -369,6 +381,12 @@ footer {
   div.wrapper {
     width:auto;
     margin:0;
+  }
+
+  .navigation {
+    position:relative;
+    top:-18px;
+    right:-20px;
   }
 
   nav{

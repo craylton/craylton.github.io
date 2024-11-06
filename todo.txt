@@ -5,3 +5,4 @@ Pages
 Footer - Contact
 Logo/favicon
 Remove the annoying sidebar thing
+Fix responsive UI for narrowest
