@@ -95,11 +95,18 @@ strong {
   top: 13px;
   right: 80px;
   width: 650px;
+  font-size: 18px;
 }
 
-.test2 {
-  font-size: 18px;
+.navButton {
   font-weight: bold;
+  color: #2b2b2b;
+}
+
+.navigation span:not(:first-child):before {
+  content: '|';
+  padding-left: 10px;
+  padding-right: 12px;
 }
 
 section img {
