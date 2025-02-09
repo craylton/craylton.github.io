@@ -1,34 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="/assets/images/favicon.ico">
+    <link rel="stylesheet" href="/projects/gol/style.css">
     <title>RGB Conway's Game of Life</title>
-    <style>
-        body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            background-color: #111;
-            margin: 0;
-            overflow: hidden;
-        }
-        canvas {
-            border: 1px solid white;
-        }
-        button {
-            padding: 10px 20px;
-            font-size: 16px;
-            cursor: pointer;
-        }
-    </style>
 </head>
+
 <body>
     <canvas id="game"></canvas>
-    <button id="pausePlayButton">Pause/Play</button>
-    <button id="stepButton">Step</button>
+    <div class="buttons">
+        <button id="pausePlayButton">Pause/Play</button>
+        <button id="stepButton">Step</button>
+    </div>
     <script type="module" src="index.js"></script>
 </body>
+
 </html>
