@@ -1,14 +1,13 @@
-import * as gridM from './grid.js';
+import * as gridUtils from './grid.js';
+import * as render from './render.js';
 
 const pausePlayButton = document.getElementById("pausePlayButton");
 const stepButton = document.getElementById("stepButton");
-const canvas = document.getElementById("game");
-const ctx = canvas.getContext("2d");
 
 const GRID_WIDTH = 240;
 const GRID_HEIGHT = 160;
 const CELL_SIZE = 5;
-let grid = gridM.createGrid(GRID_WIDTH, GRID_HEIGHT);
+let grid = gridUtils.createGrid(GRID_WIDTH, GRID_HEIGHT);
 let isPlaying = false;
 const beta = 0.25;
 const survivalLowLimit = 2.5;
@@ -35,7 +34,7 @@ const countNeighbors = (grid, x, y) => {
 }
 
 const updateGrid = () => {
-    let newGrid = gridM.createZeroGrid(GRID_WIDTH, GRID_HEIGHT);
+    let newGrid = gridUtils.createZeroGrid(GRID_WIDTH, GRID_HEIGHT);
 
     for (let x = 0; x < GRID_WIDTH; x++) {
         for (let y = 0; y < GRID_HEIGHT; y++) {
@@ -59,21 +58,9 @@ const updateGrid = () => {
     grid = newGrid;
 }
 
-const drawGrid = () => {
-    ctx.clearRect(0, 0, canvas.width, canvas.height);
-
-    for (let x = 0; x < GRID_WIDTH; x++) {
-        for (let y = 0; y < GRID_HEIGHT; y++) {
-            let [r, g, b] = grid[x][y];
-            ctx.fillStyle = `rgb(${r * 255}, ${g * 255}, ${b * 255})`;
-            ctx.fillRect(x * CELL_SIZE, y * CELL_SIZE, CELL_SIZE, CELL_SIZE);
-        }
-    }
-}
-
 const gameLoop = () => {
     updateGrid();
-    drawGrid();
+    render.drawGrid(grid);
 
     if (isPlaying) {
         requestAnimationFrame(gameLoop);
@@ -90,12 +77,11 @@ const pausePlay = () => {
 const step = () => {
     isPlaying = false;
     updateGrid();
-    drawGrid();
+    render.drawGrid(grid);
 };
 
 pausePlayButton.addEventListener("click", pausePlay);
 stepButton.addEventListener("click", step);
 
-canvas.width = GRID_WIDTH * CELL_SIZE;
-canvas.height = GRID_HEIGHT * CELL_SIZE;
-drawGrid();
+render.initialise(GRID_WIDTH, GRID_HEIGHT, CELL_SIZE);
+render.drawGrid(grid);
