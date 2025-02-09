@@ -1,0 +1,25 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #111;
+    margin: 0;
+    overflow: hidden;
+}
+
+canvas {
+    border: 1px solid white;
+}
+
+button {
+    font-size: 16px;
+    cursor: pointer;
+    height: 40px;
+}
+
+#whiteButton {
+    background-color: white;
+    width: 40px;
+    color: white;
+}
