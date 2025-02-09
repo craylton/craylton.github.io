@@ -1,3 +1,5 @@
+import * as gridM from './grid.js';
+
 const pausePlayButton = document.getElementById("pausePlayButton");
 const stepButton = document.getElementById("stepButton");
 const canvas = document.getElementById("game");
@@ -6,7 +8,7 @@ const ctx = canvas.getContext("2d");
 const GRID_WIDTH = 240;
 const GRID_HEIGHT = 160;
 const CELL_SIZE = 5;
-let grid = createGrid(GRID_WIDTH, GRID_HEIGHT);
+let grid = gridM.createGrid(GRID_WIDTH, GRID_HEIGHT);
 let isPlaying = false;
 const beta = 0.25;
 const survivalLowLimit = 2.5;
@@ -14,51 +16,7 @@ const survivalHighLimit = 5;
 const birthLowLimit = 4;
 const birthHighLimit = 5;
 
-// 🎨 Initialize a random grid
-function createGrid(width, height) {
-    return Array.from({ length: width }, () =>
-        Array.from({ length: height }, () =>
-            [
-                Math.round(Math.random()),
-                Math.round(Math.random()),
-                Math.round(Math.random())
-            ])
-    );
-}
-function createZeroGrid(width, height) {
-    return Array.from({ length: width }, () =>
-        Array.from({ length: height }, () =>
-            [0, 0, 0])
-    );
-}
-function createBWGrid(width, height) {
-    return Array.from({ length: width }, () =>
-        Array.from({ length: height }, () => {
-            const val = Math.round(Math.random());
-            return [val, val, val];
-        })
-    );
-}
-
-function createTestGrid(width, height) {
-    const b = [0, 0, 0];
-    const w = [1, 1, 1];
-    return [
-        [b, b, b, b, b, b, b, b, b, b],
-        [b, b, b, b, b, b, b, b, b, b],
-        [b, b, b, b, b, b, b, b, b, b],
-        [b, b, b, w, b, b, b, b, b, b],
-        [b, b, b, w, w, b, b, b, b, b],
-        [b, b, b, b, w, b, b, b, b, b],
-        [b, b, b, b, b, b, b, b, b, b],
-        [b, b, b, b, b, b, b, b, b, b],
-        [b, b, b, b, b, b, b, b, b, b],
-        [b, b, b, b, b, b, b, b, b, b]
-    ];
-}
-
-// 🔢 Count neighbors of a cell
-function countNeighbors(grid, x, y) {
+const countNeighbors = (grid, x, y) => {
     let R = 0, G = 0, B = 0;
     const directions = [-1, 0, 1];
 
@@ -76,9 +34,8 @@ function countNeighbors(grid, x, y) {
     return { R, G, B };
 }
 
-// 🔄 Update grid based on rules
-function updateGrid() {
-    let newGrid = createZeroGrid(GRID_WIDTH, GRID_HEIGHT);
+const updateGrid = () => {
+    let newGrid = gridM.createZeroGrid(GRID_WIDTH, GRID_HEIGHT);
 
     for (let x = 0; x < GRID_WIDTH; x++) {
         for (let y = 0; y < GRID_HEIGHT; y++) {
@@ -102,8 +59,7 @@ function updateGrid() {
     grid = newGrid;
 }
 
-// 🖌 Draw the grid
-function drawGrid() {
+const drawGrid = () => {
     ctx.clearRect(0, 0, canvas.width, canvas.height);
 
     for (let x = 0; x < GRID_WIDTH; x++) {
@@ -115,8 +71,7 @@ function drawGrid() {
     }
 }
 
-// 🔄 Animation loop
-function gameLoop() {
+const gameLoop = () => {
     updateGrid();
     drawGrid();
 
@@ -138,11 +93,9 @@ const step = () => {
     drawGrid();
 };
 
-// Attach button click event
 pausePlayButton.addEventListener("click", pausePlay);
 stepButton.addEventListener("click", step);
 
-// Start simulation
 canvas.width = GRID_WIDTH * CELL_SIZE;
 canvas.height = GRID_HEIGHT * CELL_SIZE;
 drawGrid();
