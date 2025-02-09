@@ -5,10 +5,21 @@ import * as gol from './gol.js';
 const pausePlayButton = document.getElementById("pausePlayButton");
 const stepButton = document.getElementById("stepButton");
 
-render.initialise();
-const { gridWidth, gridHeight } = render.getGridSize();
-let grid = gridUtils.createGrid(gridWidth, gridHeight);
+var grid;
 let isPlaying = false;
+
+const clickCell = (x, y) => {
+    if (x >= 0 && x < gridWidth && y >= 0 && y < gridHeight) {
+        grid[x][y] = [1, 1, 1];
+    }
+    if (!isPlaying) {
+        render.drawGrid(grid);
+    }
+};
+
+render.initialise(clickCell);
+const { gridWidth, gridHeight } = render.getGridSize();
+grid = gridUtils.createGrid(gridWidth, gridHeight);
 
 const gameLoop = () => {
     grid = gol.calculateUpdatedGrid(grid);

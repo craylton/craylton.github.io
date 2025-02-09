@@ -4,11 +4,21 @@ var cellSize = 8;
 const gridWidth = Math.round((window.innerWidth * 0.8) / cellSize);
 const gridHeight = Math.round((window.innerHeight * 0.8) / cellSize);
 
-export const initialise = () => {
+const clickCell = (event, updateGridCallback) => {
+    const rect = canvas.getBoundingClientRect();
+    const x = Math.floor((event.clientX - rect.left) / cellSize);
+    const y = Math.floor((event.clientY - rect.top) / cellSize);
+
+    updateGridCallback(x, y);
+};
+
+export const initialise = (cellClickedCallback) => {
     canvas = document.getElementById("game");
     ctx = canvas.getContext("2d");
     canvas.width = gridWidth * cellSize;
     canvas.height = gridHeight * cellSize;
+
+    canvas.addEventListener("click", (event) => clickCell(event, cellClickedCallback));
 };
 
 export const getGridSize = () => ({ gridWidth, gridHeight });
