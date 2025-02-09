@@ -25,7 +25,7 @@ const countNeighbors = (grid, x, y) => {
         }
     }
     return { R, G, B };
-}
+};
 
 export const calculateUpdatedGrid = (grid) => {
     const width = grid.length;
@@ -52,4 +52,4 @@ export const calculateUpdatedGrid = (grid) => {
         }
     }
     return newGrid;
-}
+};

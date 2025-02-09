@@ -28,7 +28,7 @@ const gameLoop = () => {
     if (isPlaying) {
         requestAnimationFrame(gameLoop);
     }
-}
+};
 
 const pausePlay = () => {
     isPlaying = !isPlaying;
