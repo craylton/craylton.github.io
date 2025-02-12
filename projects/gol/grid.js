@@ -1,4 +1,4 @@
-export const createGrid = (width, height) => {
+export const createRandomGrid = (width, height) => {
     return Array.from({ length: width }, () =>
         Array.from({ length: height }, () =>
             [
@@ -9,7 +9,7 @@ export const createGrid = (width, height) => {
     );
 }
 
-export const createZeroGrid = (width, height) => {
+export const createEmptyGrid = (width, height) => {
     return Array.from({ length: width }, () =>
         Array.from({ length: height }, () =>
             [0, 0, 0])

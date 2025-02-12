@@ -18,8 +18,46 @@ button {
     height: 40px;
 }
 
+.colorButton {
+    width: 40px;
+}
+
 #whiteButton {
     background-color: white;
-    width: 40px;
     color: white;
+}
+
+#blackButton {
+    background-color: black;
+    color: black;
+}
+
+#redButton {
+    background-color: red;
+    color: red;
+}
+
+#greenButton {
+    background-color: green;
+    color: green;
+}
+
+#blueButton {
+    background-color: blue;
+    color: blue;
+}
+
+#yellowButton {
+    background-color: yellow;
+    color: yellow;
+}
+
+#magentaButton {
+    background-color: magenta;
+    color: magenta;
+}
+
+#cyanButton {
+    background-color: cyan;
+    color: cyan;
 }

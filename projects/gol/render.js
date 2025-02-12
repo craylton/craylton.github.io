@@ -1,6 +1,6 @@
 var canvas;
 var ctx;
-var cellSize = 8;
+var cellSize = 4;
 const gridWidth = Math.round((window.innerWidth * 0.8) / cellSize);
 const gridHeight = Math.round((window.innerHeight * 0.8) / cellSize);
 
@@ -12,7 +12,7 @@ const clickCell = (event, updateGridCallback) => {
     updateGridCallback(x, y);
 };
 
-export const initialise = (cellClickedCallback) => {
+export const initialize = (cellClickedCallback) => {
     canvas = document.getElementById("game");
     ctx = canvas.getContext("2d");
     canvas.width = gridWidth * cellSize;

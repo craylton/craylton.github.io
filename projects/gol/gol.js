@@ -30,7 +30,7 @@ const countNeighbors = (grid, x, y) => {
 export const calculateUpdatedGrid = (grid) => {
     const width = grid.length;
     const height = grid[0].length;
-    let newGrid = gridUtils.createZeroGrid(width, height);
+    let newGrid = gridUtils.createEmptyGrid(width, height);
 
     for (let x = 0; x < width; x++) {
         for (let y = 0; y < height; y++) {
