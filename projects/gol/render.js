@@ -1,6 +1,6 @@
 var canvas;
 var ctx;
-var cellSize = 4;
+var cellSize = 10;
 const gridWidth = Math.round((window.innerWidth * 0.8) / cellSize);
 const gridHeight = Math.round((window.innerHeight * 0.8) / cellSize);
 

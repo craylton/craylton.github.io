@@ -3,7 +3,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #111;
+    background-color: #2e3944;
     margin: 0;
     overflow: hidden;
 }
@@ -60,4 +60,8 @@ button {
 #cyanButton {
     background-color: cyan;
     color: cyan;
+}
+
+.link {
+    color: white;
 }
