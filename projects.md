@@ -27,3 +27,10 @@ A cell is **alive** if it has at least two active colors. The evolution follows 
 3. A color remains in a **live** cell if its score is in **[2.5,5]**.
 
 Importantly, when restricted to black (000) and white (111), **the rules reduce to Conway’s original Life**, making RGB Life a natural extension for those familiar with it.
+
+
+[Memory Game](projects/MemoryGame/index.html)
+
+This is a very simple game which was written predominantly by ChatGPT and a Copilot agent.
+
+The game, often called _Concentration_, is a memory challenge that requires the user to memorise the locations of face-down pairs of cards, and match them up. This is often used as a 'learn-to-code' exercise, and in this case I treated it as more of a 'learn-to-code-with-AI' exercise. I might come back to this every now and then to add features whenever I want to try out another type of agent or a new model.

@@ -1,0 +1,31 @@
+body {
+  font-family: sans-serif;
+  text-align: center;
+  background-color: #f0f0f0;
+  padding: 20px;
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+.game-board {
+  display: grid;
+  grid-template-columns: repeat(4, 100px);
+  grid-gap: 15px;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 500px;
+}
+
+.card {
+  width: 100px;
+  height: 100px;
+  background-color: #999; /* face-down color */
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 0 0 5px rgba(0,0,0,0.2);
+  background-size: cover;
+  background-position: center;
+  transition: background-image 0.3s ease;
+}
