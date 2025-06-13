@@ -2,10 +2,6 @@
 layout: default
 ---
 
-# Blog post 1
+# What if advertising was illegal?
 
-[link](blog/blog1.html)
-
-# Blog post 2
-
-[link](blog/blog2.html)
+[link](blog/ad-ban.html)
