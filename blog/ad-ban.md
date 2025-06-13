@@ -11,10 +11,10 @@ TV and radio breaks? Gone. YouTube mid-rolls? Gone. Sponsored tweets and branded
 
 It sounds almost surreal — maybe even a little utopian. But what would that world actually look like?
 
-This isn’t just a whimsical daydream. I’ve long been uncomfortable with the role advertising plays in our lives. I always recommend using ad blockers, and I avoid installing apps that rely on ads to function. Over time, I’ve found myself wondering: what if we just banned it altogether? The more I think about it, the more it seems not only feasible, but ideal.
+This isn’t just a whimsical daydream. I’ve long been uncomfortable with the role advertising plays in our lives. I always recommend using ad blockers, and I avoid installing apps that rely on ads. Over time, I’ve found myself wondering: what if we just banned it altogether? The more I think about it, the more it seems not only feasible, but in some ways ideal.
 
-Surprisingly, when I suggest it to other people, it's usually met with a lot of resistance.
-- "What about the content creators? All your favourite influencers wouldn't be able to create entertainment any more!"
+Surprisingly, when I suggest this to other people, it's usually met with a lot of resistance.
+- "What about the content creators? All your favourite influencers wouldn't be able to create entertainment anymore!"
 - "Television basically runs on ads - banning ads would be basically banning television!"
 - "Marketing is a huge industry, think about how many people would lose their jobs!"
 - "Small businesses rely heavily on adverts. If they can't advertise themselves, they'd cease to exist!"
@@ -24,16 +24,17 @@ Surprisingly, when I suggest it to other people, it's usually met with a lot of 
 
 1. Yes, content creators, influencers, tiktokers and youtubers would largely disappear.
     - These people would need to retrain into other jobs which don't rely on bombarding people with adverts.
-    - This is obviously a bad thing for the content creators. But a quick search online suggests they only make up about 3% of the population. **(TODO reference source)** What about the other 97%?
+    - This is obviously a bad thing for the content creators. But a quick search online suggests that only about 1% of the global population make a living from online content creation [{source 1}](https://linktr.ee/creator-report/static/Linktree-CreatorReport-2022-02f3aa05a27be6fecb3537b13d5ec9de.pdf) [{source 2}](https://news.adobe.com/news/news-details/2022/adobe-future-of-creativity-study-165m-creators-joined-creator-economy-since-2020). What about the other 97%?
 2. The platforms that those content creators existed on, like Youtube, Twitch and so on, would also mostly disappear.
     - Those that don't disappear would have to switch to different business models such as subscription models, and would be much less popular.
     - Again, this is clearly a bad thing for the people working at those companies, and again, that represents the vast minority of people.
 3. Social media would also be amongst the industries that disappear.
     - This would make it trickier to stay in touch with people.
-    - At the same time, social media leads to mental health issues, decreased productivity, and negative social comparisons [{link}](https://health.ucdavis.edu/blog/cultivating-health/social-medias-impact-our-mental-health-and-tips-to-use-it-safely/2024/05), so a lot of problems would be solved by this move.
+    - At the same time, social media leads to mental health issues, decreased productivity, and negative social comparisons [{source}](https://health.ucdavis.edu/blog/cultivating-health/social-medias-impact-our-mental-health-and-tips-to-use-it-safely/2024/05), so a lot of problems would be solved by this move.
 4. The advertising industry would collapse, and everyone working in the sector would have to move on to another job.
     - Similarly to the content creators, these people would need to find a job which doesn't rely on shoving ads in people's faces.
-    - In fact this is a smaller problem than for content creators, as there are fewer people directly working in marketing compared to content creators **(TODO reference source)**, plus typically these people have transferrable skills already.
+    - Again, similarly to content creators, this would affect the vast minority of people - around 2% of the global population [{source}](https://www.ama.org/marketing-industry-stats-and-information/)
+    - Also, typically people in this section of the workforce already have transferrable skills, so finding a new job would be easier than for many content creators.
 5. People would be forced to think more about what they're buying.
     - People's buying habits would be more driven by their actual desires and word-of-mouth, rather than people simply being told what to buy.
     - As people tend to buy more of what they need rather than what they want, simple and high quality products would become more prevalent.
@@ -42,7 +43,7 @@ Surprisingly, when I suggest it to other people, it's usually met with a lot of 
     - 'Fast fashion' would become a thing of the past - people would buy clothes less often, but of higher quality, leading to less waste.
 7. The visual world - online and offline - would be much more bearable.
     - Even those working in advertising would have to agree that the world would be a better looking place without billboards on city streets, banner ads/popups on websites, and so on, all of which were designed to be as distracting and eye-catching as possible.
-    - This reduced visual clutter would create less stress for the population **(TODO reference source)**, and wouldn't fill our minds with nonsensical slogans and annoying characters.
+    - This reduced visual clutter would create less stress for the population due to lower cortisol levels [{source}](https://www.stylist.co.uk/fitness-health/wellbeing/clutter-health-impact/845209), and wouldn't fill our minds with nonsensical slogans and annoying characters.
 8. Real world use cases
     - Bhutan has very restrictive rules on advertising, where advertising dangerous products is extremely difficult. While I can't find any specific studies on the outcomes, there is plenty of anecdotal evidence that there are many measurable local benefits in terms of quality of life.
 
@@ -50,7 +51,7 @@ So to summarise all of the above: some big companies would die out, and a minori
 
 Now I'll stop playing devil's advocate and give some of my actual opinions.
 
-1. Advertising-based platforms — from television to TikTok — are, in my view, a net drain on people's well-being (**TODO find a source**). They encourage passive consumption, promote shallow thinking, and often leave people feeling worse than before. If banning ads meant the end of these platforms, I’d consider it a net gain.
+1. Advertising-based platforms — from television to TikTok — are, in my view, a net drain on people's well-being. There is a strong correlation between television consumption and low intelligence [{source}](https://www.tandfonline.com/doi/epdf/10.1080/08838158009363973?needAccess=true). They encourage passive consumption, promote shallow thinking, and often leave people feeling worse than before. If banning ads meant the end of these platforms, I’d consider it a net gain.
 
 2. The attention economy has driven many content creators toward clickbait, sensationalism, and low-quality material — often at the expense of meaningful content. Even educational creators can sometimes fall into this trap, spreading misinformation or veering into activism.
 
