@@ -3,7 +3,7 @@ layout: default
 ---
 
 ## What if advertising was illegal?
-21st April 2025
+13st June 2025
 
 Imagine waking up tomorrow in a world with no advertising: no banner ads, no pop-ups, no billboards. No jingles, no influencers pausing mid-sentence to promote a teeth-whitening kit, and no targeted Instagram stories trying to sell you a jacket you glanced at once.
 
@@ -41,18 +41,22 @@ Summary: Big companies would decline, and a small minority would need to pivot c
 
 ### My take on these changes
 
-1. Advertising platforms drain well-being.
-    Sure, it's nice to chill with a show after a long day. But there's a strong correlation between TV consumption and lower intelligence [{source}](https://www.tandfonline.com/doi/epdf/10.1080/08838158009363973?needAccess=true). Passive consumption fosters shallow thinking and often diminishes mood. If banning ads ended these platforms, I'd call it a net positive.
+1. Advertising-dependent platforms drain well-being.
+
+    Television, Netflix, TikTok - anything that results in the viewer staring passively - fosters shallow thinking and often diminishes mood Sure, it's nice to chill with a show after a long day. But there's a strong correlation between TV consumption and lower intelligence [{source}](https://www.tandfonline.com/doi/epdf/10.1080/08838158009363973?needAccess=true). If banning ads ended these platforms, I'd call it a net positive.
 
 2. The attention economy degrades content quality.
+
     The current system incentivises content creators towards clickbait, sensationalism, and misinformation. Even well-meaning creators can veer into activism or conspiracy. Sometimes content can teach you something useful; and sometimes you'll laugh out loud at a hilarious cat video; but it can be very difficult to distinguish valuable content from useless or even harmful.
 
-3. Harmful industries get regulated; so could marketing.
-    Consider how we normally treat harmful industries: when society collectively decides that something - like tobacco, hard drugs, or leaded petrol - does more harm than good, we regulate or ban it. Why should the marketing industry be immune to this kind of scrutiny?
+3. Harmful industries get regulated; and so could marketing.
+
+    Consider how we normally treat harmful industries: when society collectively decides that something - like tobacco, hard drugs, or leaded petrol - does more harm than good, we regulate or ban it. Why should the marketing industry - an industry built to manipulate attention - be immune to this kind of scrutiny?
 
 4. Smaller players might actually gain ground.
-    Yes, small businesses rely on ads, but so do giant corporations. In fact big corporations lean far more on ads than smaller businesses. I'd expect the playing field to level somewhat, and all companies would have to focus on providing consumers with high quality products.
 
-I admit: some advertising does genuine good - raising awareness of life-improving products, public-service campaigns, etc. But separating 'good' ads from 'bad' at scale is practically impossible. Dialing back advert reliance would slow growth, forcing us to relearn living with less.
+    Yes, small businesses rely on ads, but so do giant corporations. In fact, big corporations lean far more on ads than smaller businesses. I'd actually expect the playing field to level somewhat, and all companies would have to focus on providing consumers with high quality products.
+
+I admit: some advertising does genuine good - raising awareness of life-improving products, public-service campaigns, etc. But separating 'good' ads from 'bad' at scale is practically impossible. Plus, dialing back advert reliance would slow economic growth, forcing us to relearn living with less.
 
 Perhaps an outright ban isn't the answer. A smarter path might be strict regulation, high taxes, or limits so ads become the exception rather than the norm. But the bottom line remains: fewer ads mean a happier, healthier population - less clutter, less stress, fewer distractions. The economy might grumble - capitalism be damned - but I think most of us would breathe easier.
