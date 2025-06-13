@@ -1,153 +1,151 @@
-function generateDotPatternImage(size = 100, dotCount = 10) {
-    const canvas = document.createElement('canvas');
-    canvas.width = size;
-    canvas.height = size;
-    const ctx = canvas.getContext('2d');
-
-    // Background color
-    ctx.fillStyle = '#fff';
-    ctx.fillRect(0, 0, size, size);
-
-    // Draw random dots
-    for (let i = 0; i < dotCount; i++) {
-        ctx.beginPath();
-        const x = Math.random() * size;
-        const y = Math.random() * size;
-        const radius = Math.random() * 20 + 5;
-        ctx.fillStyle = `hsl(${Math.random() * 360}, 80%, 50%)`; // random color
-        ctx.arc(x, y, radius, 0, Math.PI * 2);
-        ctx.fill();
+// Card class to encapsulate card state
+class Card {
+    constructor(image, imageId) {
+        this.image = image;
+        this.imageId = imageId;
+        this.flipped = false;
+        this.matched = false;
+        this.element = this.createElement();
     }
 
-    // Return data URL to use as image
-    return canvas.toDataURL();
-}
-
-let cards = [];
-let cardsFlippedThisTurn = [];
-let turnCount = 0;
-
-function showWinMessage() {
-    const winMsg = document.getElementById('win-message');
-    winMsg.innerHTML = `You won in ${turnCount} turns!<br><button id="restart-btn" class="restart-btn">Restart</button>`;
-    winMsg.style.display = 'block';
-    const restartBtn = document.getElementById('restart-btn');
-    restartBtn.addEventListener('click', restartGame);
-}
-
-function hideWinMessage() {
-    const winMsg = document.getElementById('win-message');
-    winMsg.style.display = 'none';
-    winMsg.innerHTML = '';
-}
-
-function checkWin() {
-    if (cards.every(card => card.dataset.matched === 'true')) {
-        showWinMessage();
-    }
-}
-
-function restartGame() {
-    // Remove all cards from the board
-    const gameBoard = document.getElementById('game-board');
-    while (gameBoard.firstChild) {
-        gameBoard.removeChild(gameBoard.firstChild);
-    }
-    // Reset variables
-    cards = [];
-    cardsFlippedThisTurn = [];
-    turnCount = 0;
-    hideWinMessage();
-    // Regenerate images and cards
-    const numPairs = 6;
-    const images = [];
-    for (let i = 0; i < numPairs; i++) {
-        const img = { image: generateDotPatternImage(), imageId: i };
-        images.push(img, img);
-    }
-    images.sort(() => Math.random() - 0.5);
-    images.forEach((img, index) => {
+    createElement() {
         const card = document.createElement('div');
         card.classList.add('card');
-        card.dataset.image = img.image;
-        card.dataset.id = img.imageId;
-        card.dataset.flipped = 'false';
-        card.dataset.matched = 'false';
-        card.addEventListener('click', handleCardClick);
-        cards.push(card);
-        gameBoard.appendChild(card);
-    });
+        card.addEventListener('click', () => this.handleClick());
+        return card;
+    }
+
+    handleClick() {
+        if (this.onClick) {
+            this.onClick(this);
+        }
+    }
+
+    render() {
+        if (this.flipped || this.matched) {
+            this.element.style.backgroundImage = `url(${this.image})`;
+        } else {
+            this.element.style.backgroundImage = '';
+        }
+        this.element.classList.toggle('flipped', this.flipped);
+        this.element.classList.toggle('matched', this.matched);
+    }
 }
 
-function handleCardClick(event) {
-    const card = event.currentTarget;
+// MemoryGame class to manage game state
+class MemoryGame {
+    constructor(boardElement, winMessageElement, numPairs = 6) {
+        this.boardElement = boardElement;
+        this.winMessageElement = winMessageElement;
+        this.numPairs = numPairs;
+        this.cards = [];
+        this.cardsFlippedThisTurn = [];
+        this.turnCount = 0;
+    }
 
-    // if 2 cards are already flipped, unflip them
-    if (cardsFlippedThisTurn.length >= 2) {
-        cards.forEach(c => {
-            if (c.dataset.flipped === 'true' && c.dataset.matched === 'false') {
-                c.style.backgroundImage = '';
-                c.dataset.flipped = 'false';
-            }
+    generateDotPatternImage(size = 100, dotCount = 10) {
+        const canvas = document.createElement('canvas');
+        canvas.width = size;
+        canvas.height = size;
+        const ctx = canvas.getContext('2d');
+        ctx.fillStyle = '#fff';
+        ctx.fillRect(0, 0, size, size);
+        for (let i = 0; i < dotCount; i++) {
+            ctx.beginPath();
+            const x = Math.random() * size;
+            const y = Math.random() * size;
+            const radius = Math.random() * 20 + 5;
+            ctx.fillStyle = `hsl(${Math.random() * 360}, 80%, 50%)`;
+            ctx.arc(x, y, radius, 0, Math.PI * 2);
+            ctx.fill();
+        }
+        return canvas.toDataURL();
+    }
+
+    setupGame() {
+        this.clearBoard();
+        this.cards = [];
+        this.cardsFlippedThisTurn = [];
+        this.turnCount = 0;
+        this.hideWinMessage();
+        // Generate images
+        const images = [];
+        for (let i = 0; i < this.numPairs; i++) {
+            const img = { image: this.generateDotPatternImage(), imageId: i };
+            images.push(img, img);
+        }
+        images.sort(() => Math.random() - 0.5);
+        // Create cards
+        images.forEach(img => {
+            const card = new Card(img.image, img.imageId);
+            card.onClick = (c) => this.handleCardClick(c);
+            this.cards.push(card);
+            this.boardElement.appendChild(card.element);
+            card.render();
         });
-        cardsFlippedThisTurn = []; // Reset for next turn
-        return;
     }
 
-    // If card is already matched, do nothing
-    if (card.dataset.matched === 'true') {
-        return;
-    }
-    // If card is already flipped, do nothing
-    if (card.dataset.flipped === 'true') {
-        return;
+    clearBoard() {
+        while (this.boardElement.firstChild) {
+            this.boardElement.removeChild(this.boardElement.firstChild);
+        }
     }
 
-    card.style.backgroundImage = `url(${card.dataset.image})`;
-    card.dataset.flipped = 'true';
-    cardsFlippedThisTurn.push(card);
-
-    if (cardsFlippedThisTurn.length === 2) {
-        turnCount++;
-
-        if (cardsFlippedThisTurn[0].dataset.id !== cardsFlippedThisTurn[1].dataset.id) {
+    handleCardClick(card) {
+        if (card.flipped || card.matched) return;
+        if (this.cardsFlippedThisTurn.length === 2) {
+            this.unflipUnmatched();
             return;
         }
+        card.flipped = true;
+        card.render();
+        this.cardsFlippedThisTurn.push(card);
+        if (this.cardsFlippedThisTurn.length === 2) {
+            this.turnCount++;
+            const [c1, c2] = this.cardsFlippedThisTurn;
+            if (c1.imageId === c2.imageId) {
+                c1.matched = c2.matched = true;
+                c1.render();
+                c2.render();
+                this.cardsFlippedThisTurn = [];
+                this.checkWin();
+            }
+        }
+    }
 
-        // If cards match, mark them as matched
-        const flippedCards = cards.filter(c => c.dataset.flipped === 'true');
-        flippedCards.forEach(c => {
-            c.dataset.matched = 'true';
-        });
-        cardsFlippedThisTurn = []; // Reset for next turn
-        checkWin();
+    unflipUnmatched() {
+        const [c1, c2] = this.cardsFlippedThisTurn;
+        if (c1 && c2 && !c1.matched && !c2.matched) {
+            c1.flipped = false;
+            c2.flipped = false;
+            c1.render();
+            c2.render();
+        }
+        this.cardsFlippedThisTurn = [];
+    }
+
+    checkWin() {
+        if (this.cards.every(card => card.matched)) {
+            this.showWinMessage();
+        }
+    }
+
+    showWinMessage() {
+        this.winMessageElement.innerHTML = `You won in ${this.turnCount} turns!<br><button id="restart-btn" class="restart-btn">Restart</button>`;
+        this.winMessageElement.style.display = 'block';
+        document.getElementById('restart-btn').onclick = () => this.setupGame();
+    }
+
+    hideWinMessage() {
+        this.winMessageElement.style.display = 'none';
+        this.winMessageElement.innerHTML = '';
     }
 }
 
-document.addEventListener('DOMContentLoaded', () => {
-    const gameBoard = document.getElementById('game-board');
-
-    const numPairs = 6;
-    const images = [];
-
-    for (let i = 0; i < numPairs; i++) {
-        const img = { image: generateDotPatternImage(), imageId: i };
-        images.push(img, img); // Two of each image
-    }
-
-    // Shuffle images
-    images.sort(() => Math.random() - 0.5);
-
-    images.forEach((img, index) => {
-        const card = document.createElement('div');
-        card.classList.add('card');
-        card.dataset.image = img.image;
-        card.dataset.id = img.imageId;
-        card.dataset.flipped = 'false';
-        card.dataset.matched = 'false';
-        card.addEventListener('click', handleCardClick);
-        cards.push(card);
-
-        gameBoard.appendChild(card);
-    });
+// DOMContentLoaded setup
+window.addEventListener('DOMContentLoaded', () => {
+    const board = document.getElementById('game-board');
+    const winMsg = document.getElementById('win-message');
+    const game = new MemoryGame(board, winMsg);
+    game.setupGame();
 });
