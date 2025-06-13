@@ -43,31 +43,21 @@ Surprisingly, when I suggest it to other people, it's usually met with a lot of 
 7. The visual world - online and offline - would be much more bearable.
     - Even those working in advertising would have to agree that the world would be a better looking place without billboards on city streets, banner ads/popups on websites, and so on, all of which were designed to be as distracting and eye-catching as possible.
     - This reduced visual clutter would create less stress for the population **(TODO reference source)**, and wouldn't fill our minds with nonsensical slogans and annoying characters.
+8. Real world use cases
+    - Bhutan has very restrictive rules on advertising, where advertising dangerous products is extremely difficult. While I can't find any specific studies on the outcomes, there is plenty of anecdotal evidence that there are many measurable local benefits in terms of quality of life.
 
 So to summarise all of the above: some big companies would die out, and a minority of the population would need to transfer careers. Meanwhile, the overall mental health of the population would improve, and there would be less waste, leading to a healthier environment. People would likely find themselves with more savings due to being more picky about what they buy, although we'd certainly see a reduction in global growth to match.
 
-Now for some of my opinions.
+Now I'll stop playing devil's advocate and give some of my actual opinions.
 
-First of all, generally speaking, services that rely on advertising are a net drain on people's wellbeing. Television makes people dumber (**TODO find a source**), and losing television would make people smarter and give their lives more meaning. This goes for streaming services, TikTok, anything that causes people to just sit there staring at a screen.
+1. Advertising-based platforms — from television to TikTok — are, in my view, a net drain on people's well-being (**TODO find a source**). They encourage passive consumption, promote shallow thinking, and often leave people feeling worse than before. If banning ads meant the end of these platforms, I’d consider it a net gain.
 
-Content creators, with their clickbait thumbnails and ALL-CAPS VIDEO TITLES are simply vile. I'm yet to find anyone who thinks these kind of videos provide any value whatsoever to the viewer. And even educational content creators are often found to be spreading fake news (whether intentionally or not) and pushing their own political agendas.
+2. The attention economy has driven many content creators toward clickbait, sensationalism, and low-quality material — often at the expense of meaningful content. Even educational creators can sometimes fall into this trap, spreading misinformation or veering into activism.
 
-If you imagine a world where it was legal to deal and take drugs, and then imagine someone coming up with the idea to make it illegal - would you argue in favour of the drugs trade? Would you say: "What about the poor drug dealers? It's a huge industry, think how many people you'd be putting out of work!"? Obviously the drug trade makes the world a worse place, and assuming you aren't an addict, you'd probably be happy to see its prohibition.
+3. It may sound like a dramatic comparison, but consider how we treat harmful industries: when society collectively decides that something — like tobacco, hard drugs, or leaded petrol — does more harm than good, we regulate or ban it. Why should the marketing industry be immune to this kind of scrutiny?
 
-The way I see it, based on the above, the marketing industry makes the world a worse place too, and has very few benefits. So why treat it like it needs respect and care, while the drugs industry should very obviously be outlawed? I know it's a bit of an extreme analogy, but you at least need a consistent viewpoint.
+4. It’s true that small businesses rely on advertising — but so do giant corporations, often far more aggressively. In fact, without paid ads, it's easy to see how the playing field might actually level somewhat, forcing companies to rely on product quality and word of mouth rather than sheer spending power.
 
-People often argue that small businesses would never be able to take off, since they rely on advertising. I never really got this argument, since big businesses rely on adverts too. In fact, surely big businesses rely on ads even more than small businesses?
+I'll gladly admit there are situations where advertising can do genuine good. Sometimes the products being advertised are genuinely high quality and would improve lives. But filtering these good cases out from the bad is practically impossible. Plus, undeniably, a lot of our economy is reliant directly or indirectly on advertising, so as already mentioned, economic growth would take a big hit. For a lot of people, it would feel like a step backwards as they transition to more basic lifestyles.
 
-Overall, the general gist of my argument is that less ads = happier population. And I think that's more important than economic growth, capitalism be damned.
-
-One final point - Bhutan has very restrictive rules on advertising, so we can look to this as a case study. While I can't find any specific studies on the outcomes, there is plenty of anecdotal evidence that there are many measurable local benefits in terms of quality of life.
-
-
----
-facts above
-opinions below
-    How many people are actually affected?
-    How badly affected will they be? Can they get over it?
-    Big businesses would suffer just as much as small ones
-    People losing their jobs can just get other jobs
-    The things that cease to exist are bad things anyway
+And perhaps due to these benefits and more, a more realistic approach might be to heavily restrict/regulate/tax ads rather than outright ban them. But the overall gist of my argument is that less ads = happier population. And I think that's more important than economic growth, capitalism be damned.
