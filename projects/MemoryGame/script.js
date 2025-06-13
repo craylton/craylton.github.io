@@ -27,12 +27,56 @@ let cards = [];
 let cardsFlippedThisTurn = [];
 let turnCount = 0;
 
+function showWinMessage() {
+    const winMsg = document.getElementById('win-message');
+    winMsg.innerHTML = `You won in ${turnCount} turns!<br><button id="restart-btn" class="restart-btn">Restart</button>`;
+    winMsg.style.display = 'block';
+    const restartBtn = document.getElementById('restart-btn');
+    restartBtn.addEventListener('click', restartGame);
+}
+
+function hideWinMessage() {
+    const winMsg = document.getElementById('win-message');
+    winMsg.style.display = 'none';
+    winMsg.innerHTML = '';
+}
+
 function checkWin() {
     if (cards.every(card => card.dataset.matched === 'true')) {
-        const winMsg = document.getElementById('win-message');
-        winMsg.textContent = `You won in ${turnCount} turns!`;
-        winMsg.style.display = 'block';
+        showWinMessage();
     }
+}
+
+function restartGame() {
+    // Remove all cards from the board
+    const gameBoard = document.getElementById('game-board');
+    while (gameBoard.firstChild) {
+        gameBoard.removeChild(gameBoard.firstChild);
+    }
+    // Reset variables
+    cards = [];
+    cardsFlippedThisTurn = [];
+    turnCount = 0;
+    hideWinMessage();
+    // Regenerate images and cards
+    const numPairs = 6;
+    const images = [];
+    for (let i = 0; i < numPairs; i++) {
+        const img = { image: generateDotPatternImage(), imageId: i };
+        images.push(img, img);
+    }
+    images.sort(() => Math.random() - 0.5);
+    images.forEach((img, index) => {
+        const card = document.createElement('div');
+        card.classList.add('card');
+        card.dataset.image = img.image;
+        card.dataset.id = img.imageId;
+        card.dataset.flipped = 'false';
+        card.dataset.matched = 'false';
+        card.addEventListener('click', handleCardClick);
+        cards.push(card);
+        gameBoard.appendChild(card);
+    });
 }
 
 function handleCardClick(event) {

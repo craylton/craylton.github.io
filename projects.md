@@ -31,6 +31,6 @@ Importantly, when restricted to black (000) and white (111), **the rules reduce 
 
 [Memory Game](projects/MemoryGame/index.html)
 
-This is a very simple game which was written predominantly by ChatGPT and a Copilot agent.
+This is a very simple game which was **written predominantly by ChatGPT and a Copilot agent**.
 
-The game, often called _Concentration_, is a memory challenge that requires the user to memorise the locations of face-down pairs of cards, and match them up. This is often used as a 'learn-to-code' exercise, and in this case I treated it as more of a 'learn-to-code-with-AI' exercise. I might come back to this every now and then to add features whenever I want to try out another type of agent or a new model.
+The game, often called _Concentration_, is a memory challenge that requires the user to memorise the locations of face-down pairs of cards, and match them up. This game is often treated as a 'learn-to-code' exercise, and in this case I treated it more like a '**learn-to-pair-code-with-AI**' exercise. I might come back to this every now and then to add features whenever I want to try out another type of agent or a new model.
