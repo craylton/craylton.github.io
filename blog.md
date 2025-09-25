@@ -2,6 +2,14 @@
 layout: default
 ---
 
-# What if advertising was illegal?
+# Blog Posts
 
-[link](blog/ad-ban.html)
+## What if advertising was illegal?
+13th June 2025
+
+[Read more →](blog/ad-ban.html)
+
+## The economy today is weird
+25th September 2025
+
+[Read more →](blog/economy-is-weird.html)
