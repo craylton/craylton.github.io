@@ -1,5 +1,9 @@
 ---
 layout: default
+title: The economy today is weird
+date: 2025-09-25
+description: A personal take on where to park £100,000 in a strange macro environment. Not financial advice.
+tags: [opinion, investing, macro, uk]
 ---
 
 ## The economy today is weird
@@ -7,7 +11,7 @@ layout: default
 
 Let me start off by saying: I'm not an economist. I'm just a regular guy with a 9-5 job creating software, with a mild interest in finance. I also realise this article probably comes across as a bit of a doompost - that wasn't my intention. The state of the economy right now is very weird, and I just wanted to put my thoughts on a digital page. Not financial advice of course!
 
-Here's a hypothetical situation: you have some spare cash laying around, let's say about £100,000. What do you do with it? You have a few main options to consider.
+Here's a hypothetical situation: you have some spare cash lying around, let's say about £100,000. What do you do with it? You have a few main options to consider.
 
 ### Consumption
 
@@ -26,7 +30,7 @@ But there are other problems in the stock market which don't get discussed so mu
 Another aspect people don't talk about often is something I call 'crypto-boosting'. This is an effect where a company's share price increases simply because it invests in cryptocurrency. The clearest example of this is Strategy (formerly MicroStrategy) which fairly consistently operates at a net loss. Since they started buying and holding a reserve of Bitcoin in 2020, their share price has risen from about $12 to around $300. To be clear, on paper they're still making a loss! 'Crypto proxy' companies like this present a feedback loop (and feedback loops in the economy usually have sharp teeth): the company buying crypto attracts investment, and the investment is used to buy more crypto. The loop continues, leading to crazy valuations on a loss-making company with no plan to change course. [This video](https://www.youtube.com/watch?v=inI0SC3Zj4A) can explain the situation much better than I can.
 
 
-But here's the thing - the stock market's been threatening to crash at any moment for literally _over a year_ now, and yet it still keeps going up. So where's all the money coming from? Well, the majority of these investments are coming [from within companies themselves](https://www.federalreserve.gov/releases/z1/20250911/z1.pdf). The magnificent seven are doing enormous share buybacks, which only pushes their own share prices higher, but given that they've just spent billions on a potentially loss-generating tech, how long can they keep this up? This is where my knowledge breaks down, and all I can do is throw my hands up and say "it just looks really bad but I don't know why."
+But here's the thing - the stock market's been threatening to crash at any moment for literally _over a year_ now, and yet it still keeps going up. So where's all the money coming from? Well, the majority of these investments are coming [from within companies themselves](https://www.federalreserve.gov/releases/z1/20250911/z1.pdf). The 'Magnificent Seven' are doing enormous share buybacks, which only pushes their own share prices higher, but given that they've just spent billions on a potentially loss-generating tech, how long can they keep this up? This is where my knowledge breaks down, and all I can do is throw my hands up and say "it just looks really bad but I don't know why."
 
 So anyway, we were talking about what to do with our £100,000. Since stocks don't look particularly safe, let's look at other asset classes.
 
