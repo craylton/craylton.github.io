@@ -1,115 +1,107 @@
-# simon-palmer.uk 🪄
+# Simon Palmer’s Website (a.k.a. the digital workbench)
 
-Personal website of Simon Palmer. Now with 100% more opinions, RGB cellular automata, and a contact page that politely declines your advances (for now).
+Welcome! This repository powers my personal website — a cozy corner of the internet where code experiments stretch their legs, blog posts ponder life (and the economy), and a contact form faithfully delivers messages to my inbox like a well‑trained carrier pigeon.
 
 Live site: https://simon-palmer.uk/
 
-## What’s in the box
+## What this website is for
 
-This repo is a simple Jekyll site with a heavily massaged version of GitHub’s Leap Day theme:
+- Showcasing projects I’m tinkering with (some sensible, some delightfully unhinged)
+- Hosting occasional blog posts on tech, finance, philosophy, and other shower thoughts
+- Giving folks a friendly way to say hello or conspire about cool ideas
 
-- Jekyll + `jekyll-seo-tag`
-- Theme: Leap Day (locally vendored here via `jekyll-theme-leap-day.gemspec`)
-- Pages: `index.md`, `projects.md`, `blog.md`, `contact.md`
-- Writing lives in `blog/` as plain Markdown pages (no `_posts` collection) — intentionally minimal
-- Projects:
-	- RGB Game of Life — colorful, surprisingly alive: `projects/gol/`
-	- Memory Game — pair-programmed with AI: `projects/MemoryGame/`
-- Assets go under `assets/` (SCSS, images, JS); built output lands in `_site/`
+In short: it’s my living resume, lab notebook, and playground rolled into one.
 
-Pro tip: don’t edit `_site/` — it’s generated. It’s here for convenience, but the source of truth is everything outside `_site/`.
 
-## Quick start (local dev)
+## What you’ll find inside
 
-Prereqs:
-- Ruby (anything modern is fine; gemspec requires Ruby ≥ 2.4)
-- Bundler (`gem install bundler` if needed)
+- Home page (`index.md`): A quick intro and a tour of highlights.
+- Blog (`blog.md` + `blog/`): A handful of posts, including:
+	- “What if advertising was illegal?”
+	- “The economy today is weird”
+- Projects (`projects.md` + `projects/`):
+	- RGB Game of Life (`projects/gol/`): A colorful extension of Conway’s Life where cells brandish RGB channels like tiny rave lights.
+	- Memory Game (`projects/MemoryGame/`): A simple Concentration game, pair‑programmed with an AI, because why not.
+- Contact (`contact.md`): A tidy Formspree‑powered form for messages, compliments, and sensible feature requests.
+- Theme and styles:
+	- Jekyll + the Leap Day theme (`_layouts/`, `_sass/`, `assets/css/style.scss`)
+	- A pinch of JS (`assets/js/main.js`)
+	- Fonts and images under `assets/`
 
-From the repo root, on Windows PowerShell:
+
+## Tech stack (brief and honest)
+
+- Jekyll (static site generator)
+- GitHub Pages‑friendly theme: Leap Day (bundled here)
+- SCSS compiled by Jekyll
+- Zero frameworks on the front end; just HTML/CSS/JS with impeccable vibes
+
+
+## Run it locally (dev mode)
+
+You’ll need:
+
+- Ruby (3.x recommended). On Windows, install “Ruby with DevKit”.
+- Bundler (`gem install bundler`) — we’ll use it to install and run Jekyll.
+
+Then, from the repo root in PowerShell:
 
 ```powershell
+# Install dependencies
 bundle install
-bundle exec jekyll serve
+
+# Serve locally with live reload (http://127.0.0.1:4000)
+bundle exec jekyll serve --livereload
+
+# Optional: include drafts while writing
+# bundle exec jekyll serve --livereload --drafts
 ```
 
-Then visit http://127.0.0.1:4000
+If you hit native‑build snags on Windows, make sure you installed the Ruby DevKit and ran the post‑install step. You can also try:
 
-If you get a gem conflict, try deleting `Gemfile.lock` and running `bundle install` again.
-
-## How to add things
-
-### A new blog post
-Posts are simple pages under `blog/` (not the usual Jekyll `_posts`). Create a new file, e.g. `blog/my-thoughts.md`:
-
-```markdown
----
-layout: default
-title: My Thoughts On Pigeons
-date: 2025-10-03
-description: A brief meditation on sky rats.
-tags: [pigeons, urban, nature]
----
-
-## My Thoughts On Pigeons
-3rd October 2025
-
-They walk like tiny executives late for a meeting.
+```powershell
+# Keep gems local to the project (optional but tidy)
+bundle config set path vendor/bundle
+bundle install
 ```
 
-Then manually add an entry to `blog.md` (it’s a hand-curated list):
-
-```markdown
-## My Thoughts On Pigeons
-3rd October 2025
-
-[Read more →](blog/my-thoughts.html)
-```
-
-### A new page
-Drop a Markdown file at the repo root with front matter, e.g. `about.md`:
-
-```markdown
----
-layout: default
-title: About Me
----
-
-# About
-Hello, it’s me.
-```
-
-Want it in the top navigation? Edit `_layouts/default.html` and add a link in the nav bar.
-
-### A new project
-Put static assets under `projects/YourProject/` and link it from `projects.md`. Keep it simple and self-contained.
-
-## Styling and scripts
-
-- SCSS entrypoint: `assets/css/style.scss` → compiled by Jekyll to `_site/assets/css/style.css`
-- JavaScript: `assets/js/main.js` resizes the main content area to look nice on tall/short viewports
-- Images & fonts live under `assets/images/` and `assets/fonts/`
-
-If you’re feeling brave, you can also tweak theme styles under `_sass/`.
 
 ## Deployment
 
-This is a user site (`simon-palmer.uk`), so GitHub Pages serves from the default branch of this repo. Push changes and the site updates. For local previews, use `bundle exec jekyll serve` as above.
+This site is designed to be GitHub Pages‑friendly. Push to `main` and Pages does the rest. If a custom domain is configured, GitHub Pages serves that too. No capes required.
 
-## License
 
-CC0 1.0 Universal (public domain). See `LICENSE`.
+## Contributing, issues, and requests
 
-## FAQ
+- Spot a typo, broken link, or small fix? PRs are welcome.
+- Bigger ideas or features? Please open an issue so we can chat before you invest time.
+- Be kind, be clear, and include screenshots where helpful. Bonus points for reproducible steps.
 
-- Why “Leap Day” theme? Because time is a flat circle and sometimes it has bonus squares.
-- Can I contact you? See `contact.md` … which currently says no. Respectfully mysterious.
-- Is the economy weird? Yes. Evidence: `blog/economy-is-weird.md`.
-- Are ads illegal here? Not yet, but please enjoy the blissful absence of them anyway.
+This is a personal site, so I reserve the right to steer the vibe. That said, I love good ideas and tidy code.
 
-## Contributing
 
-It’s a personal site, but PRs for typos, broken links, and small fixes are welcome. If you add features, keep them lightweight and dependency-free where possible.
+## Licenses and credits
+
+- Code and content: CC0‑1.0 (Public Domain). See `LICENSE`.
+- Third‑party assets (e.g., fonts) remain under their respective licenses.
+- Theme: Based on GitHub’s Leap Day theme.
+- Thanks to Formspree for the contact form, and to AI copilots for occasionally holding the wrench while I bolt things together.
+
+
+## Maintainer
+
+Simon Palmer — Senior Full‑Stack Developer, rubber‑duck whisperer, and creator of RGB grid chaos.
+
+Say hi via the contact form on the site, or open an issue here if it’s repo‑related.
+
+
+## FAQ (mini and mildly useful)
+
+- Why is there an upside‑down photo? Because debugging turns my world around.
+- Is RGB Life scientifically accurate? As accurate as tiny colored squares need to be.
+- Can I borrow parts of this site? Yes — CC0 means you can copy, remix, and reuse. Please keep third‑party licenses intact.
+
 
 ---
 
-May your builds be green, your CSS selectors specific-but-not-too-specific, and your ideas spicier than the SCSS.
+If you read all the way down here, you’ve unlocked +1 curiosity. Use it wisely.
