@@ -482,6 +482,10 @@ screen and (max-width: 1060px) {
     }
 
     #logo {
+      right: 63px;
+    }
+
+    #linkedin-logo {
       right: 20px;
     }
   }
@@ -525,19 +529,28 @@ screen and (max-width: 720px) {
     .navigation {
       position: relative;
       top: 16px;
-      right: -60px;
     }
 
     .fork {
-      float: left;
-      margin-left: 0px;
       position: fixed;
-      left: 20px;
+      left: auto;
+      right: 53px;
+      padding: 0;
+    }
+
+    .linkedin {
+      position: fixed;
+      left: auto;
+      right: 10px;
+      padding: 0;
     }
 
     #logo {
-      right: 0px;
-      top: 2px;
+      position: static;
+    }
+
+    #linkedin-logo {
+      position: static;
     }
   }
 
@@ -575,7 +588,12 @@ screen and (max-width: 480px) {
   }
 
   #banner {
-    display: none;
+    position: inherit;
+
+
+    .navigation {
+      font-size: 14px;
+    }
   }
 
   header ul {
