@@ -1,8 +1,8 @@
-# craylton.github.io 🪄
+# simon-palmer.uk 🪄
 
 Personal website of Simon Palmer. Now with 100% more opinions, RGB cellular automata, and a contact page that politely declines your advances (for now).
 
-Live site: https://craylton.github.io
+Live site: https://simon-palmer.uk/
 
 ## What’s in the box
 
@@ -93,7 +93,7 @@ If you’re feeling brave, you can also tweak theme styles under `_sass/`.
 
 ## Deployment
 
-This is a user site (`craylton.github.io`), so GitHub Pages serves from the default branch of this repo. Push changes and the site updates. For local previews, use `bundle exec jekyll serve` as above.
+This is a user site (`simon-palmer.uk`), so GitHub Pages serves from the default branch of this repo. Push changes and the site updates. For local previews, use `bundle exec jekyll serve` as above.
 
 ## License
 
