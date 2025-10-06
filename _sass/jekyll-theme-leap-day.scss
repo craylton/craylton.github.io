@@ -307,7 +307,28 @@ header {
     right: 7px;
     top: 7px;
     display: block;
-    background: url(../images/octocat-logo.svg);
+    background: url(../images/github-logo.svg);
+    background-size: contain;
+  }
+
+  #linkedin-logo {
+    position: absolute;
+    height: 36px;
+    width: 36px;
+    right: 50px;
+    top: 7px;
+    display: block;
+    background: url(../images/linkedin-logo.svg);
+    background-size: contain;
+  }
+
+  .linkedin {
+    left: 50%;
+    margin-left: -325px;
+    padding: 10px 12px;
+    margin-top: 6px;
+    line-height: 14px;
+    font-size: 14px;
   }
 }
 
