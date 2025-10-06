@@ -1,6 +1,3 @@
 Pages
     About
-    Blog
-    Contact
 Footer - Contact
-Logo/favicon

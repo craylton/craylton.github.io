@@ -376,6 +376,52 @@ footer {
   text-align: center;
 }
 
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form label {
+  margin-top: 10px;
+  margin-bottom: 5px;
+  color: #333;
+  font-weight: bold;
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+  padding: 10px;
+  border: 1px solid #cbcbcb;
+  border-radius: 3px;
+  font-family: 'Quattrocento Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  margin-bottom: 10px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+form textarea {
+  height: 150px;
+  resize: vertical;
+}
+
+form button[type="submit"] {
+  background-color: #4276b6;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  align-self: flex-start;
+}
+
+form button[type="submit"]:hover {
+  background-color: #365f9a;
+}
+
 @media print,
 screen and (max-width: 1060px) {
   div.wrapper {
