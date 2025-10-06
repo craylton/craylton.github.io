@@ -6,10 +6,8 @@ layout: default
 <div style="display: flex; align-items: center;">
   <img src="assets/images/upsidedown.jpg" alt="Picture of me" width="300" style="margin-right: 15px;">
   <div>
-    <p>Hi! I'm Simon. This is my website. It's still in progress so there isn't much here yet...</p>
-    <p>I'm a full stack software developer in the UK with about 10 years experience.
-    I have a bunch of interests beyond coding which I hope to start writing about soon, if I find time.
-    Mainly these are maths-y kinds of subjects like finance, but also some other areas like philosophy, fitness and politics.</p>
-    <p>This website was made from a heavily modified version of the <a href="https://github.com/pages-themes/leap-day">leap year</a> template.</p>
+    <p>Hi, I’m Simon — a senior full‑stack software developer with ~10 years in the trenches (C#.NET and friends). I care about clean, maintainable code, good practices, and helping teams level up. I also talk to rubber ducks when debugging. They’re great listeners.</p>
+    <p>This site is my digital workbench: experiments, notes, and slightly unhinged side projects. You’ll find an RGB Game of Life that’s far too lively for a grid, a tiny Memory Game pair‑programmed with an AI, and the odd blog post on finance, philosophy, fitness, and why the economy is weird.</p>
+    <p>If you’re browsing, start with <a href="projects.html">Projects</a> or dip into the <a href="blog.html">Blog</a>. If you came here to judge my font choices, I respect the hustle. Either way — glad you’re here.</p>
     </div>
 </div>
